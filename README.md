@@ -20,6 +20,8 @@ Github Repo: - Telekom Security Repo (T-Pot)
 I decided to use Digital Ocean cloud provider because I wanted to do something a little different since everyone does an AWS EC2 HoneyPot. In Digital Ocean, I created a droplet, then I chose San Fransico because I wanted to see how many attackers attack in my region.  
 
 <img width="2047" height="1032" alt="screenshot-1768990312451" src="https://github.com/user-attachments/assets/c7d152c7-cc0d-4a75-bae7-44d071a0186d" />
-The next step is choosing the image for the honeypot. I decided to go with Ubuntu 24.04 (TLS) x64 because I've seen that it is compatible with the Telekom security, which we will need for our dashboard to analyze the attackers' behavior and location. 
+The next step is choosing the image for the honeypot. I decided to go with Ubuntu 24.04 (TLS) x64 because I've seen that it is compatible with the Telekom security and I was able comfortable with Ubuntu. The telekom security will be important because we will need it for our dashboard to analyze the attackers' behavior and location. 
 
 After deciding on the image, now we have to choose the size, and for the honeypot, it takes up a lot of space. The minimum needed memory is 8GB to build the honeypot. Hence, the reason I chose the 8 GB and 4 CPUs. The CPU options don't matter, and any options would work.
+
+
