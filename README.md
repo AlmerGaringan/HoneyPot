@@ -15,3 +15,4 @@ Digital Ocean: - Ubuntu 24.04 (LTS) x64 (Image)
 Installation 
 
 <img width="2046" height="714" alt="screenshot-1768990249232" src="https://github.com/user-attachments/assets/88e4285e-6ce6-4e11-b49c-38402c73090c" />
+I decided to use Digital Ocean cloud provider because I wanted to do something a little different since everyone does an AWS EC2 HoneyPot. In Digital Ocean, I created a droplet, then I chose San Fransico because I wanted to see how many attackers attack near my region.  
