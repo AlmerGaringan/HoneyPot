@@ -24,4 +24,5 @@ The next step is choosing the image for the honeypot. I decided to go with Ubunt
 
 After deciding on the image, now we have to choose the size, and for the honeypot, it takes up a lot of space. The minimum needed memory is 8GB to build the honeypot. Hence, the reason I chose the 8 GB and 4 CPUs. The CPU options don't matter, and any options would work.
 
-
+<img width="2049" height="1033" alt="screenshot-1768990366313" src="https://github.com/user-attachments/assets/dd000826-06f7-4e23-a1f0-9efda6749330" />
+Next, I had to choose an authentication method. I decided to go with the password method because I've already done the ssh key method, so I feel like the password method is faster then the ssh key method. The reasoning is that you would have to download the ssh key to your file and then chmod the file so that it is only readable. Once I finished choosing the password method, I was ready to create the droplet. 
