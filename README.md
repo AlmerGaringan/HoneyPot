@@ -26,3 +26,6 @@ After deciding on the image, now we have to choose the size, and for the honeypo
 
 <img width="2049" height="1033" alt="screenshot-1768990366313" src="https://github.com/user-attachments/assets/dd000826-06f7-4e23-a1f0-9efda6749330" />
 Next, I had to choose an authentication method. I decided to go with the password method because I've already done the ssh key method, so I feel like the password method is faster then the ssh key method. The reasoning is that you would have to download the ssh key to your file and then chmod the file so that it is only readable. Once I finished choosing the password method, I was ready to create the droplet. 
+
+<img width="2044" height="1037" alt="droplet covered" src="https://github.com/user-attachments/assets/b2a2328c-2b6c-4b40-8d6a-f07b7c1830ae" />
+This is what it looks like after I created my droplet. We are given IPv4, which is the public IP, this will be important because this is where we will be accessing the T-Pot later on. We also given the private IP for the cloud that is being used. 
