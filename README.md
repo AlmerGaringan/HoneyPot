@@ -7,7 +7,7 @@ VirtualBox: - 4096 MB Memory
              - 4 CPU
              - Kali Iso
 
-Digital Ocean: - Ubuntu 24.04 (LTS) x64 (Image) - Basic CPU - 8 GB Memory - 4 CPU
+DigitalOcean: - Ubuntu 24.04 (LTS) x64 (Image) - Basic CPU - 8 GB Memory - 4 CPU
 
 Github Repo: - Telekom Security Repo (T-Pot)
                
@@ -35,7 +35,7 @@ Before adding the user, I ran the command "apt-get update && apt-get upgrade -y"
 
 The reason I decided to adduser is that I need a non-root user to run the honeypot on. Instead of the root user being where the honeypot is running, this can cause any compromised information. Then I had to put in the password for Almer. The password will be very important later on. But for the value for the user doesn't matter, you could leave them blank because for the honeypot, those values aren't being used. Almer has the least privileges, that's why I ran the command " sudo usermod -aG sudo almer ". This will give almer sudo privileges, which is like root or admin privileges. Then I wanted to switch user to almer. Hence, why you see " su almer " then you see " almer@HoneyPot/root$ ". I wanted to go home, but in the almer account, that's why I " cd /home/almer. I wanted to make sure I had git install so I ran " sudo apt install git " to just make sure I have git installed, and I did because the next command will need git for it to work. The next command is to copy the GitHub repositories for the T-Pot " git clone https://github.com/telekom-security/tpotce" that is the URL of the T-POT repository. When it was finished cloning, I wanted to make sure it was there, then I wanted to change my directory into the tpotce. I was able to see different types of directories and files. But the only one that we need here is "install.sh"; this will install the T-Pot. To install the T-Pot, I ran the " ./install.sh " command. 
 
-During the middle of the installation of the T-Pot, it will show that the ssh port is now 64295. Also, towards the middle, it will ask you what type of installation type do you want to install? I chose h, which is hive because it is the T-Pot stand. There were other ones, including S (T-Pot Sensor), L (T-Pot LLM), I (T-Pot Mini), M (T-Pot Mobile), and T (T-Pot Tarpit). These are all different types of T-pot. Near the end, it will ask you to put a web user name and password, which will be important later on as well. 
+During the middle of the installation of the T-Pot, it will show that the ssh port is now 64295. Also, towards the middle, it will ask you what type of installation type do you want to install. I chose h, which is hive because it is the T-Pot stand. There were other ones, including S (T-Pot Sensor), L (T-Pot LLM), I (T-Pot Mini), M (T-Pot Mobile), and T (T-Pot Tarpit). These are all different types of T-pot. Near the end, it will ask you to put a web user name and password, which will be important later on as well. 
 
 <img width="1279" height="195" alt="Screenshot 2026-01-21 012112" src="https://github.com/user-attachments/assets/79abe2f7-785c-44ac-8b9b-9c79ae82a2b3" />
 At the end of the installation, it will show us the active internet connections. I see that we have our 64295 active, which is the new port to ssh into. Then it asks us to reboot. Once we reboot, it will kick us back to our machine.
